@@ -21,8 +21,6 @@ function TaskList() {
     },
   ]);
 
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
